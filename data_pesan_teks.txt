@@ -1,0 +1,46 @@
+Ini adalah file kosakata bot
+bot akan memuat teks yang mengandung kosakata dan mengembalikan kalimat balasan
+
+# Petunjuk
+* Simbol (=) digunakan untuk memisahkan kalimat input dan output
+* Gunakan simbol (|) untuk memisahkan kalimat input, untuk beberapa variasi kosakata
+^ Setiap kosakata harus diakhiri simbol (;) untuk memisahkan data kosakata
+* Kosakata yang panjang harus diposisikan di awal
+
+⛔ Jangan ubah/hapus bagian petunjuk ini!
+  (bagian petunjuk ini adalah bagian dari array, jika berubah' fungsinya bisa error)
+;
+
+^apa kabar | ^bagaimana kabarmu = saya baik-baik saja;
+^apa kabar bot$                 = baik;
+
+halo bot$                       = Halo %nama;
+hai bot$                        = Hai %nama;
+halo$                           = Hai;
+^hai$                           = Hai juga;
+^bot$                           = ada yang bisa saya bantu?;
+
+^sekarang jam berapa$ |
+^jam berapa sekarang$ |
+^ini jam berapa$ |
+^jam berapa ini$                = Sekarang jam %jam : %menit;
+
+^aku cape | semangatin dong     = uhh cup cup cup,semangat yaa sayangku;
+^lagi apa | lagi ngapain        = langi ngobrol sama kamu;
+^kamu dibuat siapa              = aku dibuat oleh saeful anwar;
+^gombalin aku dong              = aku gak bisa gombal,aku bisanya menyayangimu;
+^bisa bantu aku | bantu aku     = iya bisa kok, bantu apa emang?;
+^kalo arti i love you apa       = gak bisa bahasa inggris;
+^i love you                                             = I love you too;
+^chika | chika chu              = iya, ada apa paggil aku;
+^streaming anime dimana ya      = kalo aku di otakudesu.tv biasanya;
+^hibur aku | hibur aku dong     = ku tuliskan namamu dilangit,angin meniupnya.Kutuliskan namamu di laut,ombak membawanya. Kutuliskan namamu di hatiku,cinta namanya;
+^yank | sayang                  = iyaa,ada apa sayank?;
+^bosen | aku bosan              = coba cari kegiatan yang positif,olahraga kek;
+
+^sekarang tanggal berapa$ |
+^tanggal berapa sekarang$ |
+^ini tanggal berapa$ |
+^tanggal berapa ini$            = Sekarang tanggal %tanggal;
+
+^p$ | ^ping$ | ^woi$            = iya;
